@@ -442,6 +442,7 @@ a {
 .action-btn:nth-child(3) { animation-delay: 1.05s; }
 .action-btn:nth-child(4) { animation-delay: 1.20s; }
 .action-btn:nth-child(5) { animation-delay: 1.35s; }
+.action-btn:nth-child(6) { animation-delay: 1.50s; }
 
 @keyframes btnReveal {
   from { opacity: 0; transform: translateY(20px) scale(0.96); }
@@ -545,6 +546,45 @@ a {
 }
 
 .btn-channel:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+/* ── WhatsApp Catalogue Button ── */
+.btn-catalogue {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: var(--clr-white);
+  box-shadow: 0 6px 24px rgba(245,158,11,0.35), 0 2px 8px rgba(0,0,0,0.10);
+  border: none;
+  position: relative;
+}
+
+.btn-catalogue::after {
+  content: 'NEW';
+  position: absolute;
+  top: -6px;
+  right: 14px;
+  background: #EF4444;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 2px 7px;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(239,68,68,0.4);
+  animation: newBadgePulse 2s ease-in-out infinite;
+}
+
+@keyframes newBadgePulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.1); }
+}
+
+.btn-catalogue:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 36px rgba(245,158,11,0.50), 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.btn-catalogue:active {
   transform: translateY(-1px) scale(0.99);
 }
 
