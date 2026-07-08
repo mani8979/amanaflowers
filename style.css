@@ -819,6 +819,68 @@ a {
   40%, 80% { transform: scale(1.0); }
 }
 
+/* Developer Credit Styles */
+.developer-credit {
+  margin-top: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--clr-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(102, 187, 106, 0.18);
+  border-radius: var(--radius-md);
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all var(--dur-med) var(--ease-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+.developer-credit:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: var(--clr-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.dev-link {
+  color: var(--clr-primary-dark);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--dur-fast) var(--ease-fast), transform var(--dur-fast) var(--ease-smooth);
+  text-decoration: none;
+}
+
+.dev-link:hover {
+  color: var(--clr-primary-light);
+  transform: scale(1.05);
+}
+
+.dev-wa-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--clr-wa);
+  transition: transform var(--dur-fast) var(--ease-smooth);
+}
+
+.dev-link:hover .dev-wa-icon {
+  transform: scale(1.2) rotate(8deg);
+}
+
+.dev-divider {
+  color: var(--clr-text-light);
+  opacity: 0.5;
+  user-select: none;
+}
+
 /* ============================================================
    10. FLOATING WHATSAPP BUTTON
    ============================================================ */
